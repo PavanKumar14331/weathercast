@@ -1,0 +1,94 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>weather</title>
+ </head>
+ <body>
+    <div class="container">
+   <h1>🌤️ Weather Dashboard</h1>
+   <div class="search-section"><input type="text" id="cityInput" placeholder="Enter city name..." aria-label="City name input"> <button id="searchBtn">Search</button>
+   </div>
+   <div id="errorMessage" class="error-message"></div>
+   <div id="loadingMessage" class="loading-message">
+    Loading...
+   </div>
+   <div id="weatherCard" class="weather-card">
+    <div class="current-weather">
+     <div class="weather-icon" id="weatherIcon">
+      ☀️
+     </div>
+     <div class="temperature" id="temperature">
+      --°C
+     </div>
+     <div class="city-name" id="cityName">
+      City Name
+     </div>
+     <div class="weather-description" id="weatherDescription">
+      Weather Description
+     </div>
+    </div>
+    <div class="weather-details">
+     <div class="detail-item"><span class="detail-icon">💨</span>
+      <div class="detail-info">
+       <div class="detail-label">
+        Wind Speed
+       </div>
+       <div class="detail-value" id="windSpeed">
+        -- km/h
+       </div>
+      </div>
+     </div>
+     <div class="detail-item"><span class="detail-icon">💧</span>
+      <div class="detail-info">
+       <div class="detail-label">
+        Humidity
+       </div>
+       <div class="detail-value" id="humidity">
+        --%
+       </div>
+      </div>
+     </div>
+     <div class="detail-item"><span class="detail-icon">🌡️</span>
+      <div class="detail-info">
+       <div class="detail-label">
+        Feels Like
+       </div>
+       <div class="detail-value" id="feelsLike">
+        --°C
+       </div>
+      </div>
+     </div>
+     <div class="detail-item"><span class="detail-icon">🔽</span>
+      <div class="detail-info">
+       <div class="detail-label">
+        Pressure
+       </div>
+       <div class="detail-value" id="pressure">
+        -- hPa
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="forecast-section">
+     <h2>5-Day Forecast</h2>
+     <div class="forecast-grid" id="forecastGrid"><!-- Forecast items will be inserted here -->
+     </div>
+    </div>
+   </div>
+   <div class="recent-searches">
+    <h3>Recent Searches</h3>
+    <div id="recentCities" class="recent-cities"></div>
+   </div>
+  </div>
+  <script src="script.js"></script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ba1736b568f47d5',t:'MTc2Nzc2Nzg5Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ </body>
+ <script src="script.js"></script>
+ </html>
+ 
+ 
+  
