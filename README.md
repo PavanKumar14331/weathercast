@@ -113,8 +113,7 @@ API Limitations (Free Tier)
 This is more than enough for personal use!
 
 Live Demo
-https://pavankumar14331.github.io/weather-dashboard/
-
+https://github.com/pavankumar14331/weather-cast
 Screenshots
 Beautiful gradient background
 Clean, modern card design
@@ -134,4 +133,5 @@ Free to use for personal and educational purposes.
 
 Credits
 Weather data provided by https://openweathermap.org/
+
 
